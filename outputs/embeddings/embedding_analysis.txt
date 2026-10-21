@@ -1,0 +1,2 @@
+Embedding interpretation: pretrained GPT token space often groups sentiment-bearing tokens sensibly, but document-level sentiment still depends on context, negation, reversal, and discourse structure. That is why the final system adapts contextual representations with LoRA rather than relying only on frozen token geometry.
+Saved files: token_length_analysis.csv, embedding_similarity_matrix.csv, embedding_nearest_neighbours.csv, contextual_similarity_before.csv, contextual_similarity_after.csv, contextual_similarity_delta.csv

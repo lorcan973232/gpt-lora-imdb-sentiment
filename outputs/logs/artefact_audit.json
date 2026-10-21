@@ -1,0 +1,85 @@
+[
+  {
+    "artefact": "outputs/tables/model_selection.csv",
+    "path": "E:\\CA1\\outputs\\tables\\model_selection.csv",
+    "exists": true,
+    "kind": "required",
+    "existing_candidates": NaN
+  },
+  {
+    "artefact": "outputs/tables/hyperparameter_tuning_results.csv",
+    "path": "E:\\CA1\\outputs\\tables\\hyperparameter_tuning_results.csv",
+    "exists": true,
+    "kind": "required",
+    "existing_candidates": NaN
+  },
+  {
+    "artefact": "outputs/metrics/final_metrics.json",
+    "path": "E:\\CA1\\outputs\\metrics\\final_metrics.json",
+    "exists": true,
+    "kind": "required",
+    "existing_candidates": NaN
+  },
+  {
+    "artefact": "outputs/figures/confusion_matrix.png",
+    "path": "E:\\CA1\\outputs\\figures\\confusion_matrix.png",
+    "exists": true,
+    "kind": "required",
+    "existing_candidates": NaN
+  },
+  {
+    "artefact": "outputs/figures/review_length_analysis.png",
+    "path": "E:\\CA1\\outputs\\figures\\review_length_analysis.png",
+    "exists": true,
+    "kind": "required",
+    "existing_candidates": NaN
+  },
+  {
+    "artefact": "outputs/errors/misclassified_examples.csv",
+    "path": "E:\\CA1\\outputs\\errors\\misclassified_examples.csv",
+    "exists": true,
+    "kind": "required",
+    "existing_candidates": NaN
+  },
+  {
+    "artefact": "outputs/embeddings/embedding_analysis.txt",
+    "path": "E:\\CA1\\outputs\\embeddings\\embedding_analysis.txt",
+    "exists": true,
+    "kind": "required",
+    "existing_candidates": NaN
+  },
+  {
+    "artefact": "outputs/models/final_model",
+    "path": "E:\\CA1\\outputs\\models\\final_model",
+    "exists": true,
+    "kind": "required",
+    "existing_candidates": NaN
+  },
+  {
+    "artefact": "outputs/logs/run_summary.txt",
+    "path": "E:\\CA1\\outputs\\logs\\run_summary.txt",
+    "exists": true,
+    "kind": "required",
+    "existing_candidates": NaN
+  },
+  {
+    "artefact": "outputs/figures/roc_curve.png or outputs/figures/pr_curve.png",
+    "path": "E:\\CA1\\outputs\\figures\\roc_curve.png | E:\\CA1\\outputs\\figures\\pr_curve.png",
+    "exists": true,
+    "kind": "one_of",
+    "existing_candidates": [
+      "E:\\CA1\\outputs\\figures\\roc_curve.png",
+      "E:\\CA1\\outputs\\figures\\pr_curve.png"
+    ]
+  },
+  {
+    "artefact": "outputs/embeddings/embedding_analysis.csv or .txt",
+    "path": "E:\\CA1\\outputs\\embeddings\\embedding_analysis.csv | E:\\CA1\\outputs\\embeddings\\embedding_analysis.txt",
+    "exists": true,
+    "kind": "one_of",
+    "existing_candidates": [
+      "E:\\CA1\\outputs\\embeddings\\embedding_analysis.csv",
+      "E:\\CA1\\outputs\\embeddings\\embedding_analysis.txt"
+    ]
+  }
+]

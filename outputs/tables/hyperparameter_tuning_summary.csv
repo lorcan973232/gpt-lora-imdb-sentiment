@@ -1,0 +1,9 @@
+stage,axis,selected_value,best_F1,best_ROC_AUC,train_time_s
+Design search,max_seq_len,128,0.8296,0.9143,39.9
+Design search,pooling,last,0.8296,0.9143,39.7
+Design search,trunc_side,head_tail,0.8523,0.9304,40.2
+Optimisation search,lr,0.0005,0.8527,0.9315,39.8
+Optimisation search,weight_decay,0.01,0.8527,0.9315,40.0
+Optimisation search,lora_r,4,0.8598,0.937,39.7
+Optimisation search,lora_dropout,0.05,0.8598,0.937,40.0
+Final confirmation,epochs,3,0.864,0.9374,59.6

@@ -1,0 +1,32 @@
+Classification report - Baseline A
+              precision    recall  f1-score   support
+
+           0     0.9031    0.9020    0.9025     12500
+           1     0.9021    0.9032    0.9027     12500
+
+    accuracy                         0.9026     25000
+   macro avg     0.9026    0.9026    0.9026     25000
+weighted avg     0.9026    0.9026    0.9026     25000
+
+
+Classification report - Baseline B
+              precision    recall  f1-score   support
+
+           0     0.8447    0.8039    0.8238     12500
+           1     0.8129    0.8522    0.8321     12500
+
+    accuracy                         0.8280     25000
+   macro avg     0.8288    0.8280    0.8279     25000
+weighted avg     0.8288    0.8280    0.8279     25000
+
+
+Classification report - System C
+              precision    recall  f1-score   support
+
+           0     0.9091    0.8948    0.9019     12500
+           1     0.8964    0.9105    0.9034     12500
+
+    accuracy                         0.9026     25000
+   macro avg     0.9027    0.9026    0.9026     25000
+weighted avg     0.9027    0.9026    0.9026     25000
+

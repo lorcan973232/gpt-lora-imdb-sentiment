@@ -1,0 +1,12 @@
+index,Train review word-count statistics
+count,22500.0
+mean,233.9
+std,173.8
+min,10.0
+25%,127.0
+50%,174.0
+75%,284.0
+90%,458.0
+95%,596.0
+99%,917.0
+max,2470.0

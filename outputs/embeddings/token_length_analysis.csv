@@ -1,0 +1,6 @@
+Statistic,Value
+Mean token/word ratio,1.278
+Median BPE length,216
+90th pct BPE length,581
+95th pct BPE length,770
+Reviews <= 512 BPE tokens,87.2%

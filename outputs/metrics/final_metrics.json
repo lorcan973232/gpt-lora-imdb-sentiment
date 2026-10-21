@@ -1,0 +1,29 @@
+{
+  "Baseline_A": {
+    "Accuracy": 0.9026,
+    "Balanced Acc": 0.9026,
+    "Precision": 0.9021,
+    "Recall": 0.9032,
+    "F1": 0.9027,
+    "ROC-AUC": 0.9654,
+    "PR-AUC": 0.9636
+  },
+  "Baseline_B": {
+    "Accuracy": 0.828,
+    "Balanced Acc": 0.828,
+    "Precision": 0.8129,
+    "Recall": 0.8522,
+    "F1": 0.8321,
+    "ROC-AUC": 0.9115,
+    "PR-AUC": 0.9114
+  },
+  "System_C": {
+    "Accuracy": 0.9026,
+    "Balanced Acc": 0.9026,
+    "Precision": 0.8964,
+    "Recall": 0.9105,
+    "F1": 0.9034,
+    "ROC-AUC": 0.966,
+    "PR-AUC": 0.965
+  }
+}

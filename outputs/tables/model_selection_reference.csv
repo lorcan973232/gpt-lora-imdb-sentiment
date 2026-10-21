@@ -1,0 +1,4 @@
+Model,Parameters_M,Layers,Hidden size,Use in study,Rationale
+distilgpt2,82,6,768,Frozen baseline and pilot LoRA candidate,"Very compute-friendly, but shallower"
+gpt2,117,12,768,Primary LoRA fine-tuning candidate,Still tractable on student hardware; more depth than distilgpt2
+gpt2-medium,345,24,1024,Reference only; excluded from runs,Interesting but typically too expensive for routine student sweeps

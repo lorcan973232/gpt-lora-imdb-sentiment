@@ -1,0 +1,12 @@
+{
+  "epoch": 3,
+  "train_loss": 0.2569,
+  "val_loss": 0.3272,
+  "Accuracy": 0.886,
+  "Balanced Acc": 0.886,
+  "Precision": 0.9004,
+  "Recall": 0.868,
+  "F1": 0.8839,
+  "ROC-AUC": 0.9586,
+  "PR-AUC": 0.9624
+}

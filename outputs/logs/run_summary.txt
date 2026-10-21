@@ -1,0 +1,40 @@
+Run started.
+Environment: {'Python': '3.11.9', 'PyTorch': '2.5.1+cu121', 'Transformers': '5.5.4', 'Scikit-learn': '1.8.0', 'NumPy': '2.4.4', 'Pandas': '3.0.2', 'Device': 'cuda', 'Debug mode': False, 'GPU': 'NVIDIA GeForce RTX 3070 Ti', 'VRAM_GB': 8.59}
+Run started.
+Environment: {'Python': '3.11.9', 'PyTorch': '2.5.1+cu121', 'Transformers': '5.5.4', 'Scikit-learn': '1.8.0', 'NumPy': '2.4.4', 'Pandas': '3.0.2', 'Device': 'cuda', 'Debug mode': False, 'GPU': 'NVIDIA GeForce RTX 3070 Ti', 'VRAM_GB': 8.59}
+Primary candidate from pilot: distilgpt2
+Selected config after staged tuning: {'model_name': 'distilgpt2', 'max_seq_len': 128, 'lr': 0.0005, 'batch_size': 8, 'epochs': 3, 'weight_decay': 0.01, 'warmup_ratio': 0.06, 'grad_accum_steps': 2, 'lora_r': 4, 'lora_alpha': 16, 'lora_dropout': 0.05, 'pooling': 'last', 'trunc_side': 'head_tail'}
+Best validation epoch metrics: {'epoch': 3, 'train_loss': 0.2562, 'val_loss': 0.3292, 'Accuracy': 0.8868, 'Balanced Acc': 0.8868, 'Precision': 0.896, 'Recall': 0.8752, 'F1': 0.8855, 'ROC-AUC': 0.9594, 'PR-AUC': 0.9632}
+Final test metrics: {'Baseline_A': {'Accuracy': 0.9026, 'Balanced Acc': 0.9026, 'Precision': 0.9021, 'Recall': 0.9032, 'F1': 0.9027, 'ROC-AUC': 0.9654, 'PR-AUC': 0.9636}, 'Baseline_B': {'Accuracy': 0.828, 'Balanced Acc': 0.828, 'Precision': 0.8129, 'Recall': 0.8522, 'F1': 0.8321, 'ROC-AUC': 0.9115, 'PR-AUC': 0.9114}, 'System_C': {'Accuracy': 0.899, 'Balanced Acc': 0.899, 'Precision': 0.8755, 'Recall': 0.9304, 'F1': 0.9021, 'ROC-AUC': 0.9653, 'PR-AUC': 0.9642}}
+Run started.
+Environment: {'Python': '3.11.9', 'PyTorch': '2.5.1+cu121', 'Transformers': '5.5.4', 'Scikit-learn': '1.8.0', 'NumPy': '2.4.4', 'Pandas': '3.0.2', 'Device': 'cuda', 'Debug mode': False, 'GPU': 'NVIDIA GeForce RTX 3070 Ti', 'VRAM_GB': 8.59}
+Primary candidate from pilot: distilgpt2
+Selected config after staged tuning: {'model_name': 'distilgpt2', 'max_seq_len': 128, 'lr': 0.0005, 'batch_size': 8, 'epochs': 3, 'weight_decay': 0.01, 'warmup_ratio': 0.06, 'grad_accum_steps': 2, 'lora_r': 4, 'lora_alpha': 16, 'lora_dropout': 0.05, 'pooling': 'last', 'trunc_side': 'head_tail'}
+Best validation epoch metrics: {'epoch': 3, 'train_loss': 0.2569, 'val_loss': 0.3272, 'Accuracy': 0.886, 'Balanced Acc': 0.886, 'Precision': 0.9004, 'Recall': 0.868, 'F1': 0.8839, 'ROC-AUC': 0.9586, 'PR-AUC': 0.9624}
+Final test metrics: {'Baseline_A': {'Accuracy': 0.9026, 'Balanced Acc': 0.9026, 'Precision': 0.9021, 'Recall': 0.9032, 'F1': 0.9027, 'ROC-AUC': 0.9654, 'PR-AUC': 0.9636}, 'Baseline_B': {'Accuracy': 0.828, 'Balanced Acc': 0.828, 'Precision': 0.8129, 'Recall': 0.8522, 'F1': 0.8321, 'ROC-AUC': 0.9115, 'PR-AUC': 0.9114}, 'System_C': {'Accuracy': 0.9026, 'Balanced Acc': 0.9026, 'Precision': 0.8964, 'Recall': 0.9105, 'F1': 0.9034, 'ROC-AUC': 0.966, 'PR-AUC': 0.965}}
+Run completed successfully.
+
+========================================================================================
+POST-RUN ARTIFACT AUDIT
+========================================================================================
+                                                     artefact                                                                                                path  exists     kind                                                                                  existing_candidates
+                           outputs/tables/model_selection.csv                                                           E:\CA1\outputs\tables\model_selection.csv    True required                                                                                                  NaN
+             outputs/tables/hyperparameter_tuning_results.csv                                             E:\CA1\outputs\tables\hyperparameter_tuning_results.csv    True required                                                                                                  NaN
+                           outputs/metrics/final_metrics.json                                                           E:\CA1\outputs\metrics\final_metrics.json    True required                                                                                                  NaN
+                         outputs/figures/confusion_matrix.png                                                         E:\CA1\outputs\figures\confusion_matrix.png    True required                                                                                                  NaN
+                   outputs/figures/review_length_analysis.png                                                   E:\CA1\outputs\figures\review_length_analysis.png    True required                                                                                                  NaN
+                    outputs/errors/misclassified_examples.csv                                                    E:\CA1\outputs\errors\misclassified_examples.csv    True required                                                                                                  NaN
+                    outputs/embeddings/embedding_analysis.txt                                                    E:\CA1\outputs\embeddings\embedding_analysis.txt    True required                                                                                                  NaN
+                                   outputs/models/final_model                                                                   E:\CA1\outputs\models\final_model    True required                                                                                                  NaN
+                                 outputs/logs/run_summary.txt                                                                 E:\CA1\outputs\logs\run_summary.txt    True required                                                                                                  NaN
+outputs/figures/roc_curve.png or outputs/figures/pr_curve.png                          E:\CA1\outputs\figures\roc_curve.png | E:\CA1\outputs\figures\pr_curve.png    True   one_of                          [E:\CA1\outputs\figures\roc_curve.png, E:\CA1\outputs\figures\pr_curve.png]
+            outputs/embeddings/embedding_analysis.csv or .txt E:\CA1\outputs\embeddings\embedding_analysis.csv | E:\CA1\outputs\embeddings\embedding_analysis.txt    True   one_of [E:\CA1\outputs\embeddings\embedding_analysis.csv, E:\CA1\outputs\embeddings\embedding_analysis.txt]
+All required artefacts were present at end of run.
+Extended evidence packaging completed.
+
+========================================================================================
+SUBMISSION BUNDLE EXPORT
+========================================================================================
+Submission bundle written to: E:\CA1\outputs_submission_bundle.zip
+Manifest rows: 87
+Run completed successfully.

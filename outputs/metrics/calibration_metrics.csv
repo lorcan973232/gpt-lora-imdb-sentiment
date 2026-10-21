@@ -1,0 +1,4 @@
+System,Brier score
+A - TF-IDF + Logistic Regression,0.076023
+B - Frozen distilgpt2 + MLP,0.120495
+C - LoRA fine-tuned GPT,0.075925

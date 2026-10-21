@@ -1,0 +1,4 @@
+System,F1 95% CI,ROC-AUC 95% CI
+A - TF-IDF + Logistic Regression,"(0.8989, 0.9067)","(0.9636, 0.9674)"
+B - Frozen distilgpt2 + MLP,"(0.827, 0.8371)","(0.9079, 0.9151)"
+C - LoRA fine-tuned GPT,"(0.8997, 0.9077)","(0.9644, 0.9679)"

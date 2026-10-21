@@ -1,0 +1,12 @@
+artefact,path,exists,kind,existing_candidates
+outputs/tables/model_selection.csv,E:\CA1\outputs\tables\model_selection.csv,True,required,
+outputs/tables/hyperparameter_tuning_results.csv,E:\CA1\outputs\tables\hyperparameter_tuning_results.csv,True,required,
+outputs/metrics/final_metrics.json,E:\CA1\outputs\metrics\final_metrics.json,True,required,
+outputs/figures/confusion_matrix.png,E:\CA1\outputs\figures\confusion_matrix.png,True,required,
+outputs/figures/review_length_analysis.png,E:\CA1\outputs\figures\review_length_analysis.png,True,required,
+outputs/errors/misclassified_examples.csv,E:\CA1\outputs\errors\misclassified_examples.csv,True,required,
+outputs/embeddings/embedding_analysis.txt,E:\CA1\outputs\embeddings\embedding_analysis.txt,True,required,
+outputs/models/final_model,E:\CA1\outputs\models\final_model,True,required,
+outputs/logs/run_summary.txt,E:\CA1\outputs\logs\run_summary.txt,True,required,
+outputs/figures/roc_curve.png or outputs/figures/pr_curve.png,E:\CA1\outputs\figures\roc_curve.png | E:\CA1\outputs\figures\pr_curve.png,True,one_of,"['E:\\CA1\\outputs\\figures\\roc_curve.png', 'E:\\CA1\\outputs\\figures\\pr_curve.png']"
+outputs/embeddings/embedding_analysis.csv or .txt,E:\CA1\outputs\embeddings\embedding_analysis.csv | E:\CA1\outputs\embeddings\embedding_analysis.txt,True,one_of,"['E:\\CA1\\outputs\\embeddings\\embedding_analysis.csv', 'E:\\CA1\\outputs\\embeddings\\embedding_analysis.txt']"

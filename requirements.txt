@@ -1,0 +1,16 @@
+# Pinned versions are the ones recorded in outputs/logs/run_summary.txt and the
+# saved adapter config. Install a CUDA build of PyTorch first, for example:
+#   pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1
+transformers==5.5.4
+peft==0.19.1
+scikit-learn==1.8.0
+numpy==2.4.4
+pandas==3.0.2
+
+# Versions not recorded by the run.
+datasets
+accelerate
+matplotlib
+seaborn
+tqdm

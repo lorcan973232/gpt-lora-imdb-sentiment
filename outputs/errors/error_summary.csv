@@ -1,0 +1,5 @@
+Statistic,Value
+False positives,1315.0
+False negatives,1119.0
+Mean length of correct predictions,225.0
+Mean length of misclassified predictions,260.9

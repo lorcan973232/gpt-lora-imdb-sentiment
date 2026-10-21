@@ -1,0 +1,11 @@
+Pilot candidate comparison:
+     Model  Trainable params  Train time (s)  epoch  train_loss  val_loss  Accuracy  Balanced Acc  Precision  Recall     F1  ROC-AUC  PR-AUC
+distilgpt2            407040            38.0      1      0.6596    0.3817      0.85          0.85     0.8418   0.862 0.8518   0.9169  0.9204
+      gpt2            812544            71.2      1      0.8446    0.3963      0.83          0.83     0.8210   0.844 0.8323   0.9042  0.8944
+
+Cost/quality trade-off diagnostics:
+     Model  Trainable params  Train time (s)  epoch  train_loss  val_loss  Accuracy  Balanced Acc  Precision  Recall     F1  ROC-AUC  PR-AUC  F1 per second  F1 per 1M trainable params
+distilgpt2            407040            38.0      1      0.6596    0.3817      0.85          0.85     0.8418   0.862 0.8518   0.9169  0.9204       0.022416                    2.092669
+      gpt2            812544            71.2      1      0.8446    0.3963      0.83          0.83     0.8210   0.844 0.8323   0.9042  0.8944       0.011690                    1.024314
+
+Selected primary GPT candidate: distilgpt2. The selection rule prioritises validation F1/ROC-AUC unless extra compute is disproportionate.

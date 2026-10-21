@@ -1,0 +1,4 @@
+System,Accuracy,Balanced Acc,Precision,Recall,F1,ROC-AUC,PR-AUC
+A - TF-IDF + Logistic Regression,0.9026,0.9026,0.9021,0.9032,0.9027,0.9654,0.9636
+B - Frozen distilgpt2 + MLP,0.828,0.828,0.8129,0.8522,0.8321,0.9115,0.9114
+C - LoRA fine-tuned GPT,0.9026,0.9026,0.8964,0.9105,0.9034,0.966,0.965
