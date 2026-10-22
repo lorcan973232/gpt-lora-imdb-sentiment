@@ -9,9 +9,9 @@ artefacts/
 outputs.zip
 outputs_submission_bundle.zip
 
-# Coursework submission documents.
-Declaration of Academic Integrity.docx
-gpt_sentiment.pptx
+# Local documents and slides.
+*.docx
+*.pptx
 
 # Python environments and caches.
 .venv/

@@ -30,6 +30,8 @@ Bootstrap 95% confidence intervals (500 resamples of the test set):
 | B | 0.8270–0.8371 | 0.9079–0.9151 |
 | C | 0.8997–0.9077 | 0.9644–0.9679 |
 
+<img src="outputs/figures/roc_curve.png" alt="ROC curves on the test set: the LoRA and TF-IDF curves overlap, and the frozen-feature baseline sits below both" width="520">
+
 - **Fine-tuning versus frozen features:** LoRA fine-tuning adds a large gain over
   frozen features from the same model (F1 0.8321 to 0.9034, ROC-AUC 0.9115 to
   0.9660).
@@ -38,6 +40,12 @@ Bootstrap 95% confidence intervals (500 resamples of the test set):
 - **Decision thresholds:** System C's threshold (0.35) was chosen on the
   validation split; the baselines use 0.5. ROC-AUC and PR-AUC do not depend on
   a threshold and show the same tie.
+- **Review length:** LoRA leads TF-IDF on reviews of up to 200 words (F1 0.924
+  against 0.913 up to 100 words, 0.917 against 0.905 for 101–200) and trails it
+  on longer ones (0.886 against 0.895 for 201–400, 0.868 against 0.898 for
+  401–800, 0.882 against 0.916 above 800, where there are only 418 reviews).
+  That is the pattern expected from its 128-token input limit; TF-IDF reads the
+  whole review. Per-bucket results are in `outputs/tables/review_length_analysis.csv`.
 - **Run-to-run variation:** seeds are fixed, but GPU kernels are not
   deterministic. An earlier run with the identical configuration, also logged
   in `outputs/logs/run_summary.txt`, gave System C an accuracy of 0.8990 and an
@@ -156,3 +164,10 @@ IMDb text; the script regenerates them from the dataset with seed 42.
   compared.
 - Reviews longer than 128 tokens are truncated, even with the start-and-end
   strategy.
+
+## Licence
+
+The code is released under the MIT licence; see [`LICENSE`](LICENSE). The
+adapter in `outputs/models/final_model/` builds on `distilgpt2` (Apache-2.0),
+and the review excerpts in `outputs/errors/` come from the Large Movie Review
+Dataset cited above.
