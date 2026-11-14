@@ -60,8 +60,8 @@ modes: mixed sentiment, late reversals, sarcasm and truncation.
 
 ## Model selection and tuning
 
-**Pilot.** Short LoRA runs (one epoch, 2,000 training and 500 validation
-reviews) compared the two candidates:
+**Pilot.** Short LoRA runs (rank 8, one epoch, 2,000 training and 500
+validation reviews) compared the two candidates:
 
 | Model | Trainable params | Train time | Validation F1 | Validation ROC-AUC |
 | --- | --- | --- | --- | --- |
@@ -88,6 +88,10 @@ The final model was then trained on the full 22,500-review training split and
 validated on the 2,500-review validation split, with LoRA alpha 16, batch size
 8, gradient accumulation 2 and warm-up ratio 0.06. Adapters sit on the GPT-2
 `c_attn` and `c_proj` modules, and the classification head is trained in full.
+The final adapter has 204,288 trainable parameters: 202,752 in the rank-4 LoRA
+matrices and 1,536 in the classification head, about 0.25% of distilgpt2's
+81.9 million. Saved in float32, the adapter file is 0.8 MB. The pilot counts
+above are higher because the pilot used rank 8.
 The selected learning rate is the largest value searched, so a higher one was
 not tested. The complete configuration is in `outputs/metrics/final_config.json`
 and every tuning run is in `outputs/tables/hyperparameter_tuning_results.csv`.
